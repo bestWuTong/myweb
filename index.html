@@ -3,19 +3,23 @@
     <head>
         <meta charset="utf-8">
         <title>首页 | 无限进步</title>
-        <link rel="icon" href="img/favicon.png" />
-        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="icon" href="images/favicon.png" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
     </head>
     <body>
         <div class="web" id="top">
             <div class="top">
-                <img src="img/logo.png" alt="无限进步" title="无限进步" />
+                <a href="index.html" target="_self">
+                    <img src="images/logo.png" alt="无限进步" title="无限进步" />
+                </a>
                 <hr />
                 <div class="top-nav">
                     <a class="active" href="index.html">首页</a>
                     <a href="blog.html">我的博客</a>
                     <a href="hobby.html">我的爱好</a>
                     <a href="school.html">我的学校</a>
+                    <a href="share.html">网站分享</a>
+                    <a href="search.html">搜索</a>
                 </div>
             </div>
 
@@ -27,7 +31,7 @@
                             <div class="music">
                                 <p>音乐：避难所-Shelter</p>
                                 <audio controls autoplay="autoplay" loop="true">
-                                    <source src="music/避难所-Shelter.mp3" type="audio/mpeg" />
+                                    <source src="media/避难所-Shelter.mp3" type="audio/mpeg" />
                                     <p>你的浏览器不支持播放音频！</p>
                                 </audio>
                             </div>
@@ -41,10 +45,11 @@
                                 <p>学校：临沂大学沂水校区</p>
                                 <p>班级：软件技术1班</p>
                                 <p>学号：202292710133</p>
-                                <a href="https://space.bilibili.com/455132235" target="_blank">我的哔哩哔哩主页</a>
+                                <a href="https://space.bilibili.com/455132235" target="_blank">我的Bilibili主页</a>
+                                <a href="https://github.com/bestWuTong/" target="_blank">我的Github主页</a>
                             </div>
                             <div class="about-me-right">
-                                <img src="img/mhls.gif" alt="猫和老鼠" />
+                                <img src="images/mhls.gif" alt="猫和老鼠" />
                             </div>
                         </div>
                         <br />
@@ -62,12 +67,15 @@
             </div>
 
             <div class="back-to-top">
-                <a href="#top"><img src="img/top.png" />返回顶部</a>
+                <a href="#top"><img src="images/top.png" />返回顶部</a>
             </div>
 
             <div class="footer">
-                <p>版权所有 © 2024 宋传栋</p>
+                <p><a href="index.html" target="_self">无限进步</a> | 版权所有 © 2024 宋传栋</p>
             </div>
         </div>
+
+        <canvas class="snow" id="snow"></canvas>
+        <script src="js/snow.js"></script>
     </body>
 </html>

@@ -3,19 +3,23 @@
     <head>
         <meta charset="utf-8">
         <title>我的博客 | 无限进步</title>
-        <link rel="icon" href="img/favicon.png" />
-        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="icon" href="images/favicon.png" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
     </head>
     <body>
         <div class="web">
             <div class="top">
-                <img src="img/logo.png" alt="无限进步" title="无限进步" />
+                <a href="index.html" target="_self">
+                    <img src="images/logo.png" alt="无限进步" title="无限进步" />
+                </a>
                 <hr />
                 <div class="top-nav">
                     <a href="index.html">首页</a>
                     <a class="active" href="blog.html">我的博客</a>
                     <a href="hobby.html">我的爱好</a>
                     <a href="school.html">我的学校</a>
+                    <a href="share.html">网站分享</a>
+                    <a href="search.html">搜索</a>
                 </div>
             </div>
 
@@ -25,12 +29,14 @@
                         <h1>我的博客</h1>
                         <hr />
                         <h2>目录</h2>
-                        <a href="#blog01">Lucky工具介绍</a><br />
-                        <a href="#blog02">CasaOS家庭云系统介绍</a><br />
+                        <ol>
+                            <li><a href="#blog01">Lucky工具介绍</a><br /></li>
+                            <li><a href="#blog02">CasaOS家庭云系统介绍</a><br /></li>
+                        </ol>
                     </div>
                 </div>
                 <div class="box">
-                    <div class="blog" id="blog01">
+                    <div class="blogs" id="blog01">
                     <h2>Lucky工具介绍</h2>
                     <a href="https://www.lucky666.cn/" target="_blank">https://www.lucky666.cn/</a>
                     <p>Lucky最初是作为一个小工具，由开发者为自己的个人使用而开发，用于替代socat，在小米路由AX6000官方系统上实现公网IPv6转内网IPv4的功能。Lucky的设计始终致力于让更多的Linux嵌入式设备运行，以实现或集成个人用户常用功能，降低用户的硬件和软件操作学习成本，同时引导使用者注意网络安全。随着版本更新和网友反馈，Lucky不断迭代改进，拥有更多功能和更好的性能，成为用户值得信赖的工具。</p>
@@ -49,7 +55,7 @@
                     </div>
                 </div>
                 <div class="box">
-                    <div class="blog" id="blog02">
+                    <div class="blogs" id="blog02">
                         <h2>CasaOS家庭云系统介绍</h2>
                         <a href="https://casaos.io/" target="_blank">https://casaos.io/</a>
                         <p>CasaOS是一个基于Docker生态系统的开源家庭云系统，专为家庭场景而设计。致力于打造全球最简单、最易用、最优雅的家居云系统。</p>
@@ -71,12 +77,15 @@
             </div>
 
             <div class="back-to-top">
-                <a href="#top"><img src="img/top.png" />返回顶部</a>
+                <a href="#top"><img src="images/top.png" />返回顶部</a>
             </div>
 
             <div class="footer">
-                <p>版权所有 © 2024 宋传栋</p>
+                <p><a href="index.html" target="_self">无限进步</a> | 版权所有 © 2024 宋传栋</p>
             </div>
         </div>
+
+        <canvas class="snow" id="snow"></canvas>
+        <script src="js/snow.js"></script>
     </body>
 </html>
