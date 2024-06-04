@@ -9,11 +9,9 @@ body {
     background-attachment: fixed;
     margin: 0px;
     padding: 0px;
-    font-family: "Microsoft Yahei";
     animation: fadeInAnimation ease 1s;
 	animation-iteration-count: 1;
 	animation-fill-mode: none;
-    font-family: 'font1';
 }
 @keyframes fadeInAnimation {
     0% {
@@ -32,6 +30,19 @@ body {
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'font2';
+	src: url('../font/font2.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+h1,h2,h3,h4,h5 {
+	font-family: 'font1';
+}
+body {
+	font-family: 'font2';
+}
+
 
 a {
     transition: all 0.2s;
