@@ -183,6 +183,10 @@ a {
 .about-me-right img {
     width: 100%;
 }
+.git {
+    width: 500px;
+    margin: 30px;
+}
 
 
 /* 我的博客 */
